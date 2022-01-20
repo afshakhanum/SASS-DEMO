@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@import "fontfam";
+header{
+    width: 100vw;
+    height: 100vh;
+    background-color: lavender;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+}
+
+h1{
+    color: blue;
+    font-size: $font+$font;
+
+    &:hover{
+        color: green;
+    }
+   
+}
+
+p{
+    // color: $color;
+    // font-size: $font;
+    text-align: center;
+    @include fontfam(3rem,red);
+
+    &:hover{
+        color: hotpink;
+    }
+}
